@@ -9,6 +9,7 @@ morgan.token('find', (request, response) => {
     return JSON.stringify({name: request.body.name, number: request.body.number})
 })
 
+app.use(express.static('build'))
 app.use(cors())
 app.use(express.json())
 app.use(morgan(':method :url :status :res[content-length] - :response-time ms - :find'))
