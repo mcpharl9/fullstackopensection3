@@ -1,12 +1,22 @@
 GET http://localhost:3001/api/persons/
 
 ###
+PUT http://localhost:3001/api/persons/608852d779438155df83476f
+Content-Type: application/json
+
+{
+    "name": "Arto He",
+    "number": "111-111-1122"
+}
+###
+
 POST http://localhost:3001/api/persons
 Content-Type: application/json
 
 {
     "name": "Arto He",
-    "number": "111-111-1111"
+    "number": "111-111-1123"
 }
 
-
+###
+DELETE http://localhost:3001/api/persons/6088538079438155df834770
